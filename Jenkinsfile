@@ -8,9 +8,9 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Build and Up Docker Compose') {
             steps {
-                sh 'docker-compose build'
+                dockerComposeBuildAndUp()
             }
         }
 
