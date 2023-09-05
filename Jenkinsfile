@@ -9,12 +9,12 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                // Build the Docker image using docker-compose
-                sh 'docker-compose build'
-            }
-        }
+        // stage('Build Docker Image') {
+        //     steps {
+        //         // Build the Docker image using docker-compose
+        //         sh 'docker-compose build'
+        //     }
+        // }
 
         stage('Run Docker Containers') {
             steps {
